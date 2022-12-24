@@ -7,12 +7,13 @@ const pageTitle = "APCAコントラスト日本語フォント検証";
 <Layout title={pageTitle}>
   <main class="container">
     <h1>{pageTitle}</h1>
-    <p class="noto-sans-jp weight300">日本語文章です。</p>
+    <p class="noto-sans-jp weight100">日本語文章です。</p>
     <p class="noto-sans-jp weight400">日本語文章です。</p>
-    <p class="noto-sans-jp weight700">日本語文章です。</p>
-    <p class="noto-serif-jp weight300">日本語文章です。</p>
-    <p class="noto-serif-jp weight400">日本語文章です。</p>
+    <p class="noto-sans-jp weight900">日本語文章です。</p>
+    <p class="noto-serif-jp weight200">日本語文章です。</p>
     <p class="noto-serif-jp weight700">日本語文章です。</p>
+    <p class="biz-ud-p-gothic weight400">日本語文章です。</p>
+    <p class="biz-ud-p-mincho weight400">日本語文章です。</p>
   </main>
 </Layout>
 
@@ -29,6 +30,22 @@ const pageTitle = "APCAコントラスト日本語フォント検証";
     .noto-serif-jp {
       font-family: "Noto Serif JP";
     }
+
+    .biz-ud-p-gothic {
+      font-family: "BIZ UDPGothic";
+    }
+
+    .biz-ud-p-mincho {
+      font-family: "BIZ UDPMincho";
+    }
+    .weight100 {
+      font-weight: 100;
+    }
+
+    .weight200 {
+      font-weight: 200;
+    }
+
     .weight300 {
       font-weight: 300;
     }
@@ -37,8 +54,22 @@ const pageTitle = "APCAコントラスト日本語フォント検証";
       font-weight: 400;
     }
 
+    .weight500 {
+      font-weight: 500;
+    }
+
+    .weight600 {
+      font-weight: 600;
+    }
+
     .weight700 {
       font-weight: 700;
+    }
+    .weight800 {
+      font-weight: 800;
+    }
+    .weight900 {
+      font-weight: 900;
     }
   }
 </style>
