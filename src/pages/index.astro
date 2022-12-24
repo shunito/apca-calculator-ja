@@ -1,5 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { calcAPCA, fontLookupAPCA } from "apca-w3";
+
+let textColor: string = "#ffffff";
+let backgroundColor: string = "#333333";
+
+let contrastLc: string | number = calcAPCA(textColor, backgroundColor);
+let fcArray = fontLookupAPCA(contrastLc);
+console.log(contrastLc, fcArray);
 
 const pageTitle = "APCAコントラスト日本語フォント検証";
 ---
