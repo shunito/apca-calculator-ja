@@ -8,12 +8,20 @@
   ],
   "rules": {
     "invalid-attr": {
-      "option": {
+      "options": {
         "ignoreAttrNamePrefix": [
           "is:"
         ]
       }
-    },
+    },   
     "character-reference":false
-  }
+  },
+  "nodeRules": [
+    {
+      "selector": "body",
+      "rules": {
+        "permitted-contents": false
+      }
+    }
+  ] 
 }
