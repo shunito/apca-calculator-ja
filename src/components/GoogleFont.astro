@@ -1,0 +1,15 @@
+---
+import { fontList } from "../conf/fonts.json";
+
+const googlefontUrl = "https://fonts.googleapis.com/css2";
+
+const fontHrefList = fontList.map(
+  (font: { name: string; wght: string }) =>
+    `${googlefontUrl}?family=${font.name}:wght@${font.wght}&display=swap`
+);
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+{fontHrefList.map((href: string) => <link href={href} rel="stylesheet" />)}

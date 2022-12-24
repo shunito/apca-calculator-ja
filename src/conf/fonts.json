@@ -1,0 +1,14 @@
+{
+  "fontList": [
+    {
+      "name": "Noto+Sans+JP",
+      "wght": "300;400;700",
+      "className": "noto-sans-jp"
+    },
+    {
+      "name": "Noto+Serif+JP",
+      "wght": "300;400;700",
+      "className": "noto-serif-jp"
+    }
+  ]
+}
