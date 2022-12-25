@@ -1,0 +1,66 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+<a href="#mainContents" class="visually-hidden">メインコンテンツへスキップ</a>
+<header class="container">
+    <div class="grid">
+        <h1 class="page-title">{title}</h1>
+        <button class="secondary mode-changer">モード変更</button>
+    </div>
+    <p class="visually-hiddena mode-messanger" aria-live="polite"></p>
+</header>
+
+<script is:inline>
+    let _scheme = "light";
+    const messanger = document.querySelector('p.mode-messanger');
+    const button = document.querySelector('button.mode-changer');
+
+    const preferedColorScheme = () => {
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+    }
+
+    const applyScheme = () => {
+        document.querySelector("html").setAttribute("data-theme", _scheme);
+    }
+
+    const messageSchemeChange = () => {
+        let scheme = "";
+        if(messanger){
+            _scheme === "light" ? ( scheme = "ライト") : ( scheme = "ダーク");
+            messanger.setAttribute("text",`テーマを${scheme}モードに変更しました` ) ;
+        }
+    }
+
+    const init = () => {
+        if(button){
+            button.addEventListener('click', () => {
+            _scheme === "light" ? (_scheme = "dark") : (_scheme = "light");
+            console.log( _scheme );
+            applyScheme();
+            messageSchemeChange();
+            });
+        }
+    }
+
+    init();
+    _scheme = preferedColorScheme();
+    applyScheme();
+
+</script>
+
+<style>
+.container{
+    padding: 2rem 0;
+}
+.mode-changer{
+    max-width: 10rem;
+}
+.grid {
+    grid-template-columns: 5fr 1fr;
+}
+</style>

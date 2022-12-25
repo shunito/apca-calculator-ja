@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ApcaInformation from "../components/ApcaInformation.astro";
+
 import { calcAPCA, fontLookupAPCA } from "apca-w3";
+import "../styles/utilities.font.css";
 
 let textColor: string = "#ffffff";
 let backgroundColor: string = "#333333";
@@ -13,8 +16,7 @@ const pageTitle = "APCAコントラスト日本語フォント検証";
 ---
 
 <Layout title={pageTitle}>
-  <main class="container">
-    <h1>{pageTitle}</h1>
+  <main id="mainContents" class="container">
     <p class="noto-sans-jp weight100">日本語文章です。</p>
     <p class="noto-sans-jp weight400">日本語文章です。</p>
     <p class="noto-sans-jp weight900">日本語文章です。</p>
@@ -22,6 +24,7 @@ const pageTitle = "APCAコントラスト日本語フォント検証";
     <p class="noto-serif-jp weight700">日本語文章です。</p>
     <p class="biz-ud-p-gothic weight400">日本語文章です。</p>
     <p class="biz-ud-p-mincho weight400">日本語文章です。</p>
+    <ApcaInformation />
   </main>
 </Layout>
 
@@ -30,54 +33,7 @@ const pageTitle = "APCAコントラスト日本語フォント検証";
 </script>
 
 <style>
-  @layer utilities.font {
-    .noto-sans-jp {
-      font-family: "Noto Sans JP";
-    }
-
-    .noto-serif-jp {
-      font-family: "Noto Serif JP";
-    }
-
-    .biz-ud-p-gothic {
-      font-family: "BIZ UDPGothic";
-    }
-
-    .biz-ud-p-mincho {
-      font-family: "BIZ UDPMincho";
-    }
-    .weight100 {
-      font-weight: 100;
-    }
-
-    .weight200 {
-      font-weight: 200;
-    }
-
-    .weight300 {
-      font-weight: 300;
-    }
-
-    .weight400 {
-      font-weight: 400;
-    }
-
-    .weight500 {
-      font-weight: 500;
-    }
-
-    .weight600 {
-      font-weight: 600;
-    }
-
-    .weight700 {
-      font-weight: 700;
-    }
-    .weight800 {
-      font-weight: 800;
-    }
-    .weight900 {
-      font-weight: 900;
-    }
-  }
+.container {
+  padding: 0 0 2rem 0;
+}
 </style>

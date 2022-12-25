@@ -4,6 +4,8 @@ export interface Props {
 }
 
 import GoogleFont from "../components/GoogleFont.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 const { title } = Astro.props;
 ---
@@ -20,7 +22,9 @@ const { title } = Astro.props;
     <GoogleFont />
   </head>
   <body>
+    <Header title={title} />
     <slot />
+    <Footer />
   </body>
 </html>
 
@@ -32,5 +36,21 @@ const { title } = Astro.props;
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
     }
+  }
+
+  @layer utilities.a11y {
+    .visually-hidden {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }  
+  }
+
+  .page-title {
+    margin: 0;
   }
 </style>
