@@ -223,26 +223,18 @@
             ）{:else}（コントラスト不足）{/if}
         </li>
       {/if}
-      {#if fontWeight == "100"}<li>
-          フォントウェイト100は推奨されません。
-        </li>{/if}
-      {#if APCAresult.CopyrightOnly}<li>
-          コピーライトや著者名を表示する場合のみ推奨できます。
-        </li>{/if}
-      {#if APCAresult.PreferredBlocksText}<li>
-          本文での利用に推奨できます。
-        </li>{/if}
-      {#if APCAresult.Add15BlocksText}<li>
-          本文で利用する場合には推奨コントラストに15追加した値を設定してください。
-          （本文での推奨値：{Number(APCAresult.Lc) + 15}）
-        </li>{/if}
-      {#if Math.abs(contrastLc) > 90}<li>WCAG 2の基準 7:1以上と同等。</li>
-      {:else if Math.abs(contrastLc) > 75}<li>
-          WCAG 2の基準 4.5:1以上と同等。
-        </li>
-      {:else if Math.abs(contrastLc) > 60}<li>
-          WCAG 2の基準 3:1以上と同等。
-        </li>{/if}
+      {#if fontWeight == "100"}<li>フォントウェイト100は推奨されません。</li>{/if}
+      {#if Math.abs(contrastLc) > APCAresult.Lc}
+        {#if APCAresult.CopyrightOnly}<li>コピーライトや著者名を表示する場合のみ推奨できます。</li>{/if}
+        {#if APCAresult.PreferredBlocksText}<li>本文での利用に推奨できます。</li>{/if}
+        {#if APCAresult.Add15BlocksText}<li>
+            本文で利用する場合には推奨コントラストに15追加した値を設定してください。
+            （本文での推奨値：{Number(APCAresult.Lc) + 15}）</li>
+        {/if}
+      {/if}      
+      {#if Math.abs(contrastLc) >= 90}<li>WCAG 2の基準 7:1以上と同等。</li>
+      {:else if Math.abs(contrastLc) >= 75}<li>WCAG 2の基準 4.5:1以上と同等。</li>
+      {:else if Math.abs(contrastLc) >= 60}<li>WCAG 2の基準 3:1以上と同等。</li>{/if}
     </ul>
   </div>
 </section>
