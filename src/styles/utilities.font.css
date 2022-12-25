@@ -1,50 +1,50 @@
 @layer utilities.font {
-    .noto-sans-jp {
-      font-family: "Noto Sans JP";
-    }
-
-    .noto-serif-jp {
-      font-family: "Noto Serif JP";
-    }
-
-    .biz-ud-p-gothic {
-      font-family: "BIZ UDPGothic";
-    }
-
-    .biz-ud-p-mincho {
-      font-family: "BIZ UDPMincho";
-    }
-    .weight100 {
-      font-weight: 100;
-    }
-
-    .weight200 {
-      font-weight: 200;
-    }
-
-    .weight300 {
-      font-weight: 300;
-    }
-
-    .weight400 {
-      font-weight: 400;
-    }
-
-    .weight500 {
-      font-weight: 500;
-    }
-
-    .weight600 {
-      font-weight: 600;
-    }
-
-    .weight700 {
-      font-weight: 700;
-    }
-    .weight800 {
-      font-weight: 800;
-    }
-    .weight900 {
-      font-weight: 900;
-    }
+  .noto-sans-jp {
+    font-family: "Noto Sans JP";
   }
+
+  .noto-serif-jp {
+    font-family: "Noto Serif JP";
+  }
+
+  .biz-ud-p-gothic {
+    font-family: "BIZ UDPGothic";
+  }
+
+  .biz-ud-p-mincho {
+    font-family: "BIZ UDPMincho";
+  }
+  .weight100 {
+    font-weight: 100;
+  }
+
+  .weight200 {
+    font-weight: 200;
+  }
+
+  .weight300 {
+    font-weight: 300;
+  }
+
+  .weight400 {
+    font-weight: 400;
+  }
+
+  .weight500 {
+    font-weight: 500;
+  }
+
+  .weight600 {
+    font-weight: 600;
+  }
+
+  .weight700 {
+    font-weight: 700;
+  }
+  .weight800 {
+    font-weight: 800;
+  }
+  .weight900 {
+    font-weight: 900;
+  }
+}
