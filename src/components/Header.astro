@@ -11,6 +11,7 @@ const { title } = Astro.props;
         <button class="secondary mode-changer">モード変更</button>
     </div>
     <p class="visually-hiddena mode-messanger" aria-live="polite"></p>
+    <p>コントラストシミュレーターの簡単な説明。</p>
 </header>
 
 <script is:inline>
@@ -58,7 +59,8 @@ const { title } = Astro.props;
     padding: 2rem 0;
 }
 .mode-changer{
-    max-width: 10rem;
+    font-size: 80%;
+    width: 8rem;
 }
 .grid {
     grid-template-columns: 5fr 1fr;

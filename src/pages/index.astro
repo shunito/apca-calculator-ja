@@ -1,36 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ApcaInformation from "../components/ApcaInformation.astro";
+import ContrastCalculator from "../components/ContrastCalculator.svelte";
 
-import { calcAPCA, fontLookupAPCA } from "apca-w3";
 import "../styles/utilities.font.css";
-
-let textColor: string = "#ffffff";
-let backgroundColor: string = "#333333";
-
-let contrastLc: string | number = calcAPCA(textColor, backgroundColor);
-let fcArray = fontLookupAPCA(contrastLc);
-console.log(contrastLc, fcArray);
 
 const pageTitle = "APCAコントラスト日本語フォント検証";
 ---
 
 <Layout title={pageTitle}>
   <main id="mainContents" class="container">
-    <p class="noto-sans-jp weight100">日本語文章です。</p>
-    <p class="noto-sans-jp weight400">日本語文章です。</p>
-    <p class="noto-sans-jp weight900">日本語文章です。</p>
-    <p class="noto-serif-jp weight200">日本語文章です。</p>
-    <p class="noto-serif-jp weight700">日本語文章です。</p>
-    <p class="biz-ud-p-gothic weight400">日本語文章です。</p>
-    <p class="biz-ud-p-mincho weight400">日本語文章です。</p>
+    <ContrastCalculator client:load />
     <ApcaInformation />
   </main>
 </Layout>
-
-<script>
-  console.log("Welcome, browser console!");
-</script>
 
 <style>
 .container {
