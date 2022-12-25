@@ -1,4 +1,7 @@
 {
+  "Conformance": "SILVER",
+  "Version": "Beta 0.1.7 (G)",
+  "Revised": "2022-05-27",
   "table": [
     {
       "px": 12,
@@ -7,81 +10,81 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "600": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "700": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "800": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
@@ -93,81 +96,81 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "100",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "100",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "600": {
             "Lc": "90",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "700": {
             "Lc": "75",
             "Rating": "2",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "800": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
@@ -179,81 +182,81 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "100",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "90",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "600": {
             "Lc": "75",
             "Rating": "2",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "700": {
             "Lc": "70",
             "Rating": "3",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "800": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
@@ -265,81 +268,81 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "100",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "90",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "600": {
             "Lc": "75",
             "Rating": "2",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "700": {
             "Lc": "70",
             "Rating": "3",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "800": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
@@ -351,81 +354,81 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": true,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": true,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "90",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "75",
             "Rating": "2",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "600": {
             "Lc": "70",
             "Rating": "3",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "700": {
             "Lc": "60",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "800": {
             "Lc": "60",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
@@ -437,81 +440,81 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "100",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "75",
             "Rating": "2",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "70",
             "Rating": "3",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "600": {
             "Lc": "60",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "700": {
             "Lc": "55",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "800": {
             "Lc": "55",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "55",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
@@ -523,170 +526,858 @@
           "100": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "200": {
             "Lc": "none",
             "Rating": "none",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "300": {
             "Lc": "90",
             "Rating": "0",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "400": {
             "Lc": "70",
             "Rating": "3",
-            "Copyright-only": false,
-            "Preferred-blocksText": true,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
           }
         },
         {
           "500": {
             "Lc": "60",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "600": {
             "Lc": "55",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "700": {
             "Lc": "50",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": true
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
           }
         },
         {
           "800": {
             "Lc": "50",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         },
         {
           "900": {
             "Lc": "50",
             "Rating": "4",
-            "Copyright-only": false,
-            "Preferred-blocksText": false,
-            "Add15-blocksText": false
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
         }
       ]
     },
     {
-        "px": 24,
-        "weight": [
-          {
-            "100": {
-              "Lc": "none",
-              "Rating": "none",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": false
-            }
-          },
-          {
-            "200": {
-              "Lc": "none",
-              "Rating": "none",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": false
-            }
-          },
-          {
-            "300": {
-              "Lc": "75",
-              "Rating": "2",
-              "Copyright-only": false,
-              "Preferred-blocksText": true,
-              "Add15-blocksText": false
-            }
-          },
-          {
-            "400": {
-              "Lc": "60",
-              "Rating": "4",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": true
-            }
-          },
-          {
-            "500": {
-              "Lc": "55",
-              "Rating": "4",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": true
-            }
-          },
-          {
-            "600": {
-              "Lc": "50",
-              "Rating": "4",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": true
-            }
-          },
-          {
-            "700": {
-              "Lc": "45",
-              "Rating": "4",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": true
-            }
-          },
-          {
-            "800": {
-              "Lc": "45",
-              "Rating": "4",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": false
-            }
-          },
-          {
-            "900": {
-              "Lc": "45",
-              "Rating": "4",
-              "Copyright-only": false,
-              "Preferred-blocksText": false,
-              "Add15-blocksText": false
-            }
+      "px": 24,
+      "weight": [
+        {
+          "100": {
+            "Lc": "none",
+            "Rating": "none",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
           }
-        ]
-      }    
+        },
+        {
+          "200": {
+            "Lc": "none",
+            "Rating": "none",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "75",
+            "Rating": "2",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": true,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "400": {
+            "Lc": "60",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "500": {
+            "Lc": "55",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "600": {
+            "Lc": "50",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "700": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "800": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 28,
+      "weight": [
+        {
+          "100": {
+            "Lc": "none",
+            "Rating": "none",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "100",
+            "Rating": "0",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "70",
+            "Rating": "3",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "400": {
+            "Lc": "55",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "500": {
+            "Lc": "50",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "600": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "700": {
+            "Lc": "43",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "800": {
+            "Lc": "43",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "43",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 32,
+      "weight": [
+        {
+          "100": {
+            "Lc": "none",
+            "Rating": "none",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "90",
+            "Rating": "0",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "65",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "400": {
+            "Lc": "50",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "500": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "600": {
+            "Lc": "43",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "700": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "800": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 36,
+      "weight": [
+        {
+          "100": {
+            "Lc": "none",
+            "Rating": "none",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "75",
+            "Rating": "2",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "60",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "400": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "500": {
+            "Lc": "43",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "600": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "700": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": true
+          }
+        },
+        {
+          "800": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 42,
+      "weight": [
+        {
+          "100": {
+            "Lc": "100",
+            "Rating": "0",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "70",
+            "Rating": "3",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "55",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "400": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "500": {
+            "Lc": "43",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "600": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "700": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "800": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 48,
+      "weight": [
+        {
+          "100": {
+            "Lc": "90",
+            "Rating": "0",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "60",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "50",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "400": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "500": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "600": {
+            "Lc": "35",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "700": {
+            "Lc": "33",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "800": {
+            "Lc": "33",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "33",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 60,
+      "weight": [
+        {
+          "100": {
+            "Lc": "75",
+            "Rating": "2",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "55",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "400": {
+            "Lc": "38",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "500": {
+            "Lc": "35",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "600": {
+            "Lc": "33",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "700": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "800": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 72,
+      "weight": [
+        {
+          "100": {
+            "Lc": "60",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "50",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "40",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "400": {
+            "Lc": "35",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "500": {
+            "Lc": "33",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "600": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "700": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "800": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    },
+    {
+      "px": 96,
+      "weight": [
+        {
+          "100": {
+            "Lc": "50",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "200": {
+            "Lc": "45",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "300": {
+            "Lc": "35",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "400": {
+            "Lc": "33",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "500": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "600": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "700": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "800": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        },
+        {
+          "900": {
+            "Lc": "30",
+            "Rating": "4",
+            "CopyrightOnly": false,
+            "PreferredBlocksText": false,
+            "Add15BlocksText": false
+          }
+        }
+      ]
+    }            
   ]
 }
