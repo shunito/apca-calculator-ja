@@ -3,6 +3,7 @@
   import { calcAPCA, fontLookupAPCA } from "apca-w3";
   import { fontList } from "../conf/fonts.json";
   import { table as lcTable } from "../conf/apca-font2Lc-table.json";
+  import FontWeightSample from "./FontWeightSample.svelte";
 
   export const fontWeightList = [
     "100",
@@ -32,9 +33,19 @@
 
   export let APCAresult = {};
 
+  let selectedFontTypes = {
+    "textColor": textColor,
+    "backgroundColor": backgroundColor,
+    "sampleText": sampleText,
+    "fontSize": fontSize,
+    "fontWeight": fontWeight,
+    "fontFace": fontFaceClassName,
+  };
+
   let resultBlock = null;
   $: APCAresult;
   $: resultBlock;
+  $: selectedFontTypes;
 
   // TODO: この辺り初期設計がいけてないのでリファクタ必要
   // JSONの構造と合わせて変えたい
@@ -51,6 +62,7 @@
       APCAresult = getAPCAresult(result[0].weight);
       contrastLc = calcAPCA(textColor, backgroundColor);
       fcArray = fontLookupAPCA(contrastLc);
+      selectedFontTypes = selectedFontTypes;
     }
   };
 
@@ -68,10 +80,6 @@
   const handleFontFaceChange = (event) => {
     const value = event.target.value;
     fontFaceClassName = fontList[value].className;
-    fontFace = fontList[value].name.replaceAll("+", " ");
-
-    resultBlock.classList = [];
-    resultBlock.classList.add(fontFaceClassName);
   };
 
   const handleFontSizeChange = (event) => {
@@ -100,7 +108,10 @@
 </script>
 
 <section>
-  <h2>コントラスト シミュレーター</h2>
+  <div class="headings">
+    <h2>コントラスト シミュレーター</h2>
+    <p>使い方について簡単な説明を書く。</p>  
+  </div>
 
   <form on:submit|preventDefault={handleSubmit}>
     <div class="grid color-selector">
@@ -187,9 +198,9 @@
           <select id="fontWeight" on:change={handleFontWeightChange}>
             {#each fontWeightList as weight, index}
               {#if weight === fontWeight}
-                <option value={weight} selected>{weight}px</option>
+                <option value={weight} selected>{weight}</option>
               {:else}
-                <option value={weight}>{weight}px</option>
+                <option value={weight}>{weight}</option>
               {/if}
             {/each}
           </select>
@@ -199,15 +210,16 @@
   </form>
 
   <div
+    class={fontFaceClassName}
     style:font-size={`${fontSize}px`}
     style:font-weight={fontWeight}
     style:color={textColor}
     style:background-color={backgroundColor}
     style="padding:1rem; line-height:1.8;"
-    bind:this={resultBlock}
   >
     {sampleText}
   </div>
+
   <div class="result">
     <h3>チェック結果</h3>
     <ul>
@@ -237,6 +249,14 @@
       {:else if Math.abs(contrastLc) >= 60}<li>WCAG 2の基準 3:1以上と同等。</li>{/if}
     </ul>
   </div>
+
+  <div style="margin:2rem 0;">
+    <h3>推奨値表示サンプル</h3>
+    <FontWeightSample weight={200} sampleFontSize={fcArray[1]} textColor={textColor} backgroundColor={backgroundColor} sampleText={sampleText} fontFace={fontFaceClassName}/>
+    <FontWeightSample weight={400} sampleFontSize={fcArray[3]} textColor={textColor} backgroundColor={backgroundColor} sampleText={sampleText} fontFace={fontFaceClassName}/>
+    <FontWeightSample weight={700} sampleFontSize={fcArray[6]} textColor={textColor} backgroundColor={backgroundColor} sampleText={sampleText} fontFace={fontFaceClassName}/>
+  </div>
+
 </section>
 
 <style>
@@ -259,6 +279,9 @@
     font-size: 0.8rem;
   }
   .result {
-    margin: 2rem 1rem;
+    margin: 2rem 0;
+  }
+  .result h3 {
+    margin-bottom: 1rem;
   }
 </style>
