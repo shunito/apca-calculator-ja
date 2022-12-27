@@ -108,13 +108,13 @@
   const handleShowLatinSample = (event) => {
     const checkbox = event.target;
     showLatinFontSample = checkbox.checked;
-    checkbox.setAttribute("aria-checked",checkbox.checked);
+    checkbox.setAttribute("aria-checked", checkbox.checked);
   };
 
   const handleShowMinus1Sample = (event) => {
     const checkbox = event.target;
     showFontMinus1Sample = checkbox.checked;
-    checkbox.setAttribute("aria-checked",checkbox.checked);
+    checkbox.setAttribute("aria-checked", checkbox.checked);
   };
 
   onMount(() => {
@@ -125,8 +125,12 @@
 <section>
   <div class="headings">
     <h2>コントラスト シミュレーター</h2>
-    <p>カラーを選択すると設定フォントサイズとウェイトでの表示例と、APCA基準値によるチェック結果が表示されます。<br>
-      透明度なども考慮した基準値のシミュレーションはオリジナルの<a href="https://www.myndex.com/APCA/">APCA Contrast Calculator</a>を利用してください。
+    <p>
+      カラーを選択すると設定フォントサイズとウェイトでの表示例と、APCA基準値によるチェック結果が表示されます。<br
+      />
+      透明度なども考慮した基準値のシミュレーションはオリジナルの<a
+        href="https://www.myndex.com/APCA/">APCA Contrast Calculator</a
+      >を利用してください。
     </p>
   </div>
 
@@ -227,21 +231,32 @@
     <div>
       <fieldset class="inline">
         <label for="showLatinSample">
-          <input type="checkbox" id="showLatinSample" name="showLatinSampleswitch" role="switch" aria-checked="false" on:click={handleShowLatinSample}>
+          <input
+            type="checkbox"
+            id="showLatinSample"
+            name="showLatinSampleswitch"
+            role="switch"
+            aria-checked="false"
+            on:click={handleShowLatinSample}
+          />
           ラテンフォント例を表示
         </label>
         <label for="showMinus1Sample">
-          <input type="checkbox" id="showMinus1Sample" name="showMinus1Sampleswitch" role="switch" aria-checked="false" on:click={handleShowMinus1Sample}>
+          <input
+            type="checkbox"
+            id="showMinus1Sample"
+            name="showMinus1Sampleswitch"
+            role="switch"
+            aria-checked="false"
+            on:click={handleShowMinus1Sample}
+          />
           指定の90%の例を表示
         </label>
-      </fieldset>      
+      </fieldset>
     </div>
   </form>
 
-  <div
-    class="resultTextArea"
-    style:background-color={backgroundColor}
-    style="">
+  <div class="resultTextArea" style:background-color={backgroundColor} style="">
     <p
       class={fontFaceClassName}
       style:font-size={`${fontSize}px`}
@@ -253,35 +268,40 @@
   </div>
 
   {#if showLatinFontSample}
-  <div lang="en"
-    class="resultTextArea"
-    style:background-color={backgroundColor}>
-    <p
-      style="line-height: 1.6;"
-      style:font-size={`${fontSize}px`}
-      style:font-weight={fontWeight}
-      style:color={textColor}
+    <div
+      lang="en"
+      class="resultTextArea"
+      style:background-color={backgroundColor}
     >
-      <strong>Latin font</strong><br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p
+        style="line-height: 1.6;"
+        style:font-size={`${fontSize}px`}
+        style:font-weight={fontWeight}
+        style:color={textColor}
+      >
+        <strong>Latin font</strong><br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-  </div>
+    </div>
   {/if}
 
   {#if showFontMinus1Sample}
-  <div
-    class="resultTextArea"
-    style:background-color={backgroundColor}>
-    <p
-      class={fontFaceClassName}
-      style:font-size={`${fontSize*0.9}px`}
-      style:font-weight={fontWeight}
-      style:color={textColor}
-    >
-      <strong>フォントサイズ 90%</strong><br>
-      {sampleText}
-    </p>
-  </div>
+    <div class="resultTextArea" style:background-color={backgroundColor}>
+      <p
+        class={fontFaceClassName}
+        style:font-size={`${fontSize * 0.9}px`}
+        style:font-weight={fontWeight}
+        style:color={textColor}
+      >
+        <strong>フォントサイズ 90%</strong><br />
+        {sampleText}
+      </p>
+    </div>
   {/if}
 
   <div class="result">
@@ -332,7 +352,9 @@
   <div style="margin:2rem 0;">
     <div class="headings">
       <h3>推奨値表示サンプル</h3>
-      <p>計算されたAPCAのコントラスト値から、ウェイトに対する必要なフォントサイズの設定例です。</p>
+      <p>
+        計算されたAPCAのコントラスト値から、ウェイトに対する必要なフォントサイズの設定例です。
+      </p>
     </div>
 
     <FontWeightSample
@@ -387,8 +409,9 @@
   .result h3 {
     margin-bottom: 1rem;
   }
-  .resultTextArea{
-    padding:1rem; line-height:1.8;
+  .resultTextArea {
+    padding: 1rem;
+    line-height: 1.8;
     margin: 2px 0;
   }
   .resultTextArea p {

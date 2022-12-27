@@ -25,37 +25,38 @@ const { title } = Astro.props;
     <Header title={title} />
     <slot />
     <Footer />
-  </body><style is:global>
-    @layer i18n {
-      html[lang="ja"] {
-        --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-          "Cantarell", "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo,
-          sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
+    <style is:global>
+      @layer i18n {
+        html[lang="ja"] {
+          --font-family: system-ui, -apple-system, "Segoe UI", "Roboto",
+            "Ubuntu", "Cantarell", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+            Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Symbol", "Noto Color Emoji";
           line-height: 1.8;
+        }
+
+        [lang="en"] {
+          --font-family: system-ui, -apple-system, "Segoe UI", "Roboto",
+            "Ubuntu", "Cantarell", sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
       }
 
-      [lang="en"] {
-        --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-          "Cantarell", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
+      @layer utilities.a11y {
+        .visually-hidden {
+          clip: rect(0 0 0 0);
+          clip-path: inset(50%);
+          height: 1px;
+          overflow: hidden;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
       }
-    }
 
-    @layer utilities.a11y {
-      .visually-hidden {
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
+      .page-title {
+        margin: 0;
       }
-    }
-
-    .page-title {
-      margin: 0;
-    }
-  </style>
+    </style>
+  </body>
 </html>
