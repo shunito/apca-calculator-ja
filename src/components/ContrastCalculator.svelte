@@ -25,7 +25,7 @@
   export let contrastLc = calcAPCA(textColor, backgroundColor);
   export let fcArray = fontLookupAPCA(contrastLc);
 
-  export let fontFace = fontList[0].name.replaceAll("+", " ");
+  export const fontFace = fontList[0].name.replaceAll("+", " ");
   export let fontFaceClassName = fontList[0].className;
 
   export let fontSize = 18;
@@ -34,18 +34,21 @@
   export let APCAresult = {};
 
   let selectedFontTypes = {
-    "textColor": textColor,
-    "backgroundColor": backgroundColor,
-    "sampleText": sampleText,
-    "fontSize": fontSize,
-    "fontWeight": fontWeight,
-    "fontFace": fontFaceClassName,
+    textColor: textColor,
+    backgroundColor: backgroundColor,
+    sampleText: sampleText,
+    fontSize: fontSize,
+    fontWeight: fontWeight,
+    fontFace: fontFaceClassName,
   };
 
   let resultBlock = null;
   $: APCAresult;
   $: resultBlock;
   $: selectedFontTypes;
+
+  let showLatinFontSample = false;
+  let showFontMinus1Sample = false;
 
   // TODO: この辺り初期設計がいけてないのでリファクタ必要
   // JSONの構造と合わせて変えたい
@@ -102,6 +105,18 @@
     calculator();
   };
 
+  const handleShowLatinSample = (event) => {
+    const checkbox = event.target;
+    showLatinFontSample = checkbox.checked;
+    checkbox.setAttribute("aria-checked",checkbox.checked);
+  };
+
+  const handleShowMinus1Sample = (event) => {
+    const checkbox = event.target;
+    showFontMinus1Sample = checkbox.checked;
+    checkbox.setAttribute("aria-checked",checkbox.checked);
+  };
+
   onMount(() => {
     calculator();
   });
@@ -110,7 +125,9 @@
 <section>
   <div class="headings">
     <h2>コントラスト シミュレーター</h2>
-    <p>使い方について簡単な説明を書く。</p>  
+    <p>カラーを選択すると設定フォントサイズとウェイトでの表示例と、APCA基準値によるチェック結果が表示されます。<br>
+      透明度なども考慮した基準値のシミュレーションはオリジナルの<a href="https://www.myndex.com/APCA/">APCA Contrast Calculator</a>を利用してください。
+    </p>
   </div>
 
   <form on:submit|preventDefault={handleSubmit}>
@@ -207,18 +224,65 @@
         </div>
       </div>
     </div>
+    <div>
+      <fieldset class="inline">
+        <label for="showLatinSample">
+          <input type="checkbox" id="showLatinSample" name="showLatinSampleswitch" role="switch" aria-checked="false" on:click={handleShowLatinSample}>
+          ラテンフォント例を表示
+        </label>
+        <label for="showMinus1Sample">
+          <input type="checkbox" id="showMinus1Sample" name="showMinus1Sampleswitch" role="switch" aria-checked="false" on:click={handleShowMinus1Sample}>
+          指定の90%の例を表示
+        </label>
+      </fieldset>      
+    </div>
   </form>
 
   <div
-    class={fontFaceClassName}
-    style:font-size={`${fontSize}px`}
-    style:font-weight={fontWeight}
-    style:color={textColor}
+    class="resultTextArea"
     style:background-color={backgroundColor}
-    style="padding:1rem; line-height:1.8;"
-  >
-    {sampleText}
+    style="">
+    <p
+      class={fontFaceClassName}
+      style:font-size={`${fontSize}px`}
+      style:font-weight={fontWeight}
+      style:color={textColor}
+    >
+      {sampleText}
+    </p>
   </div>
+
+  {#if showLatinFontSample}
+  <div lang="en"
+    class="resultTextArea"
+    style:background-color={backgroundColor}>
+    <p
+      style="line-height: 1.6;"
+      style:font-size={`${fontSize}px`}
+      style:font-weight={fontWeight}
+      style:color={textColor}
+    >
+      <strong>Latin font</strong><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+  </div>
+  {/if}
+
+  {#if showFontMinus1Sample}
+  <div
+    class="resultTextArea"
+    style:background-color={backgroundColor}>
+    <p
+      class={fontFaceClassName}
+      style:font-size={`${fontSize*0.9}px`}
+      style:font-weight={fontWeight}
+      style:color={textColor}
+    >
+      <strong>フォントサイズ 90%</strong><br>
+      {sampleText}
+    </p>
+  </div>
+  {/if}
 
   <div class="result">
     <h3>チェック結果</h3>
@@ -235,28 +299,67 @@
             ）{:else}（コントラスト不足）{/if}
         </li>
       {/if}
-      {#if fontWeight == "100"}<li>フォントウェイト100は推奨されません。</li>{/if}
+      {#if fontWeight == "100"}<li>
+          フォントウェイト100は推奨されません。
+        </li>{/if}
       {#if Math.abs(contrastLc) > APCAresult.Lc}
-        {#if APCAresult.CopyrightOnly}<li>コピーライトや著者名を表示する場合のみ推奨できます。</li>{/if}
-        {#if APCAresult.PreferredBlocksText}<li>本文での利用に推奨できます。</li>{/if}
+        {#if APCAresult.CopyrightOnly}<li>
+            コピーライトや著者名を表示する場合のみ推奨できます。
+          </li>{/if}
+        {#if APCAresult.PreferredBlocksText}<li>
+            本文での利用に推奨できます。
+          </li>{/if}
         {#if APCAresult.Add15BlocksText}<li>
             本文で利用する場合には推奨コントラストに15追加した値を設定してください。
-            （本文での推奨値：{Number(APCAresult.Lc) + 15}）</li>
+            （本文での推奨値：{Number(APCAresult.Lc) + 15} Lc）
+          </li>
         {/if}
-      {/if}      
-      {#if Math.abs(contrastLc) >= 90}<li>WCAG 2の基準 7:1以上と同等。</li>
-      {:else if Math.abs(contrastLc) >= 75}<li>WCAG 2の基準 4.5:1以上と同等。</li>
-      {:else if Math.abs(contrastLc) >= 60}<li>WCAG 2の基準 3:1以上と同等。</li>{/if}
+      {/if}
+      {#if Math.abs(contrastLc) >= 90}<li>
+          WCAG 2.1の達成基準 1.4.6 コントラスト (高度) 7:1（AAA）以上と同等。
+        </li>
+      {:else if Math.abs(contrastLc) >= 75}<li>
+          WCAG 2.1の達成基準 1.4.3 コントラスト (最低限) 4.5:1（AA）以上と同等。
+        </li>
+      {:else if Math.abs(contrastLc) >= 60}<li>
+          WCAG 2.1の達成基準 1.4.3 コントラスト (最低限)
+          3:1（大きな文字の場合）（AA）以上と同等。
+        </li>
+      {/if}
     </ul>
   </div>
 
   <div style="margin:2rem 0;">
-    <h3>推奨値表示サンプル</h3>
-    <FontWeightSample weight={200} sampleFontSize={fcArray[1]} textColor={textColor} backgroundColor={backgroundColor} sampleText={sampleText} fontFace={fontFaceClassName}/>
-    <FontWeightSample weight={400} sampleFontSize={fcArray[3]} textColor={textColor} backgroundColor={backgroundColor} sampleText={sampleText} fontFace={fontFaceClassName}/>
-    <FontWeightSample weight={700} sampleFontSize={fcArray[6]} textColor={textColor} backgroundColor={backgroundColor} sampleText={sampleText} fontFace={fontFaceClassName}/>
-  </div>
+    <div class="headings">
+      <h3>推奨値表示サンプル</h3>
+      <p>計算されたAPCAのコントラスト値から、ウェイトに対する必要なフォントサイズの設定例です。</p>
+    </div>
 
+    <FontWeightSample
+      weight={200}
+      sampleFontSize={fcArray[1]}
+      {textColor}
+      {backgroundColor}
+      {sampleText}
+      {fontFaceClassName}
+    />
+    <FontWeightSample
+      weight={400}
+      sampleFontSize={fcArray[3]}
+      {textColor}
+      {backgroundColor}
+      {sampleText}
+      {fontFaceClassName}
+    />
+    <FontWeightSample
+      weight={700}
+      sampleFontSize={fcArray[6]}
+      {textColor}
+      {backgroundColor}
+      {sampleText}
+      {fontFaceClassName}
+    />
+  </div>
 </section>
 
 <style>
@@ -283,5 +386,19 @@
   }
   .result h3 {
     margin-bottom: 1rem;
+  }
+  .resultTextArea{
+    padding:1rem; line-height:1.8;
+    margin: 2px 0;
+  }
+  .resultTextArea p {
+    margin: 0;
+  }
+  .inline {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inline label {
+    margin-right: 2rem;
   }
 </style>
