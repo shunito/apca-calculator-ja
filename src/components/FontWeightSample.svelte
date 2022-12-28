@@ -11,7 +11,7 @@
   <p>Weight: {weight} <br /> Font size: {sampleFontSize}px</p>
   <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
   <div
-    style="padding:1rem; line-height:1.8; max-height:10rem; overflow:scroll;"
+    class="sample-box"
     style:background-color={backgroundColor}
     tabindex="0"
   >
@@ -32,5 +32,11 @@
   }
   .sample-setting p {
     margin: 0;
+  }
+
+  .sample-box {
+    padding:1rem;
+    line-height:1.8;
+    max-height:10rem; overflow:scroll;
   }
 </style>
