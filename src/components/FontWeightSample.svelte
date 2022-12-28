@@ -10,11 +10,7 @@
 <section class="grid sample-setting">
   <p>Weight: {weight} <br /> Font size: {sampleFontSize}px</p>
   <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-  <div
-    class="sample-box"
-    style:background-color={backgroundColor}
-    tabindex="0"
-  >
+  <div class="sample-box" style:background-color={backgroundColor} tabindex="0">
     <p
       class={fontFaceClassName}
       style:font-size={`${sampleFontSize}px`}
@@ -35,8 +31,9 @@
   }
 
   .sample-box {
-    padding:1rem;
-    line-height:1.8;
-    max-height:10rem; overflow:scroll;
+    padding: 1rem;
+    line-height: 1.8;
+    max-height: 10rem;
+    overflow: scroll;
   }
 </style>

@@ -307,7 +307,7 @@
   <div class="result">
     <div class="headings">
       <h3>チェック結果</h3>
-      <p>コントラストはLcの絶対値で評価されます。</p>  
+      <p>コントラストはLcの絶対値で評価されます。</p>
     </div>
     <ul>
       <li>
