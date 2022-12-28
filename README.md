@@ -1,14 +1,33 @@
-# Welcome to [Astro](https://astro.build)
+# APCAコントラスト日本語フォント検証
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+WCAG 3.0にて 検討が進められているテキストの視覚的コントラスト基準である APCAについて、日本語フォントに適応した場合の検討を行うためのツールを提供しています。
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 検証結果のアンケートについて
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+ツールを利用いただいた感想や、ご意見などを収集する簡単なアンケートを検討しています。
+Googleフォームを利用しようかなと考えていますが、アンケート項目の検討にもご意見いただけると嬉しいです。
+
+なるべく回答に手間がなく、少ない設問で有効なアンケートにしたいと考えていますが、なかなか難しい。
 
 
-## 🚀 Project Structure
+## ライセンス
+
+本シミュレーターのAPCAコントラスト値の計算は、APCA™ for W3C & WCAG3の提供するNode moduleを利用しています。  
+利用制限などがありますので、詳細についてはAPCA™ for W3C & WCAG3のライセンスを参照してください。  
+[APCA™ for W3C & WCAG3 LICENSE](https://github.com/Myndex/apca-w3/blob/master/LICENSE.md)
+
+日本語フォントはGoogle Fontsを利用しています。
+個々のフォントのライセンスは、Open Font Licenseで提供されています。
+
+## バグ報告やご意見、開発への貢献等について
+
+当プロジェクトのイシューに登録いただくか作者のTwitterアカウントまでご連絡ください。
+
+開発フレームワークはAstroです。初のAstro+Svelteのため色々お作法がおかしいかもしれません。求む有識者。  
+以下オリジナルのAstroについてたReadme部分。
+## 
+
+## 🚀 Astro Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
