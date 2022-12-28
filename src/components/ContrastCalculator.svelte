@@ -305,7 +305,10 @@
   {/if}
 
   <div class="result">
-    <h3>チェック結果</h3>
+    <div class="headings">
+      <h3>チェック結果</h3>
+      <p>コントラストはLcの絶対値で評価されます。</p>  
+    </div>
     <ul>
       <li>
         APCAコントラスト <strong>{contrastLc.toFixed(1)}</strong>
@@ -349,7 +352,7 @@
     </ul>
   </div>
 
-  <div style="margin:2rem 0;">
+  <div class="result">
     <div class="headings">
       <h3>推奨値表示サンプル</h3>
       <p>
@@ -407,7 +410,7 @@
     margin: 2rem 0;
   }
   .result h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   .resultTextArea {
     padding: 1rem;
