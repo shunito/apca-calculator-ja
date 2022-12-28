@@ -43,6 +43,12 @@ const { title } = Astro.props;
       }
 
       @layer utilities.a11y {
+        --primary: hsl(195deg, 90%, 32%);
+        --primary-hover: hsl(195deg 94% 22%);
+        --muted-color: hsl(205deg 17% 44%);
+      }
+
+      @layer utilities.a11y {
         .visually-hidden {
           clip: rect(0 0 0 0);
           clip-path: inset(50%);

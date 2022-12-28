@@ -256,7 +256,7 @@
     </div>
   </form>
 
-  <div class="resultTextArea" style:background-color={backgroundColor} style="">
+  <div class="resultTextArea" style:background-color={backgroundColor}>
     <p
       class={fontFaceClassName}
       style:font-size={`${fontSize}px`}
