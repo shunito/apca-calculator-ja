@@ -2,7 +2,7 @@
 
 WCAG 3.0にて 検討が進められているテキストの視覚的コントラスト基準である APCAについて、日本語フォントに適応した場合の検討を行うためのツールを提供しています。
 
-ウェブサイト：[https://apca-ja.studio-ito.net/](APCAコントラスト日本語フォント検証)
+ウェブサイト：[https://apca-ja.studio-ito.net/](https://apca-ja.studio-ito.net/)
 
 ## 検証結果のアンケートについて
 
@@ -10,7 +10,6 @@ WCAG 3.0にて 検討が進められているテキストの視覚的コント�
 Googleフォームを利用しようかなと考えていますが、アンケート項目の検討にもご意見いただけると嬉しいです。
 
 なるべく回答に手間がなく、少ない設問で有効なアンケートにしたいと考えていますが、なかなか難しい。
-
 
 ## ライセンス
 
@@ -27,7 +26,7 @@ Googleフォームを利用しようかなと考えていますが、アンケ�
 
 ## 開発環境
 
-開発環境（developブランチ）：[https://317bb2e7.apca-calculator-ja.pages.dev/](APCAコントラスト日本語フォント検証(プレビュー))
+開発環境（developブランチ）：[https://317bb2e7.apca-calculator-ja.pages.dev/](https://317bb2e7.apca-calculator-ja.pages.dev/)
 
 開発フレームワークはAstroです。初のAstro+Svelteのため色々お作法がおかしいかもしれません。求む有識者。  
 以下オリジナルのAstroについてたReadme部分。
@@ -36,7 +35,7 @@ Googleフォームを利用しようかなと考えていますが、アンケ�
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```
+```code
 /
 ├── public/
 │   └── favicon.svg
