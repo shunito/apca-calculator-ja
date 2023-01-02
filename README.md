@@ -26,6 +26,8 @@ Googleフォームを利用しようかなと考えていますが、アンケ�
 
 ## 開発環境
 
+開発環境（developブランチ）： https://develop.apca-calculator-ja.pages.dev/
+
 開発フレームワークはAstroです。初のAstro+Svelteのため色々お作法がおかしいかもしれません。求む有識者。  
 以下オリジナルのAstroについてたReadme部分。
 
