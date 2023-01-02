@@ -3,22 +3,32 @@
     {
       "name": "Noto+Sans+JP",
       "wght": "100;300;400;500;700;900",
-      "className": "noto-sans-jp"
+      "className": "noto-sans-jp",
+      "hasFeatureSettings": true
     },
     {
       "name": "Noto+Serif+JP",
       "wght": "200;300;400;500;600;700;900",
-      "className": "noto-serif-jp"
+      "className": "noto-serif-jp",
+      "hasFeatureSettings": false
     },
     {
       "name": "BIZ+UDPGothic",
       "wght": "400;700",
-      "className": "biz-ud-p-gothic"
+      "className": "biz-ud-p-gothic",
+      "hasFeatureSettings": false
     },
     {
       "name": "BIZ+UDPMincho",
       "wght": "400",
-      "className": "biz-ud-p-mincho"
+      "className": "biz-ud-p-mincho",
+      "hasFeatureSettings": false
+    },
+    {
+      "name": "M+PLUS+Rounded+1c",
+      "wght":"100;300;400;500;700;800;900",
+      "className":"rounded-mplus-1c",
+      "hasFeatureSettings": false
     }
   ]
 }

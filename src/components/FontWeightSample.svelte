@@ -5,6 +5,7 @@
   export let fontFaceClassName;
   export let sampleFontSize;
   export let weight;
+  export let fontFeatureSettings;
 </script>
 
 <section class="grid sample-setting">
@@ -16,6 +17,7 @@
       style:font-size={`${sampleFontSize}px`}
       style:font-weight={weight}
       style:color={textColor}
+      class:feature-settings-palt={fontFeatureSettings}
     >
       {sampleText}
     </p>
