@@ -49,6 +49,8 @@
 
   let showLatinFontSample = false;
   let showFontMinus1Sample = false;
+  let fontFeatureSettings = false;
+  let hasFeatureSettings = true;
 
   // TODO: この辺り初期設計がいけてないのでリファクタ必要
   // JSONの構造と合わせて変えたい
@@ -83,6 +85,18 @@
   const handleFontFaceChange = (event) => {
     const value = event.target.value;
     fontFaceClassName = fontList[value].className;
+    hasFeatureSettings = fontList[value].hasFeatureSettings;
+
+    const checkbox = document.getElementById("setFeatureSettings");
+    checkbox.checked = false;
+    fontFeatureSettings = false;
+
+    if(hasFeatureSettings) {
+      checkbox.disabled = false;
+    }
+    else{
+      checkbox.disabled = true;
+    }
   };
 
   const handleFontSizeChange = (event) => {
@@ -116,6 +130,12 @@
     showFontMinus1Sample = checkbox.checked;
     checkbox.setAttribute("aria-checked", checkbox.checked);
   };
+
+  const handleSetFeatureSettings = (event) => {
+    const checkbox = event.target;
+    fontFeatureSettings = checkbox.checked;
+    checkbox.setAttribute("aria-checked", checkbox.checked);
+  }
 
   onMount(() => {
     calculator();
@@ -234,7 +254,7 @@
           <input
             type="checkbox"
             id="showLatinSample"
-            name="showLatinSampleswitch"
+            name="showLatinSampleSwitch"
             role="switch"
             aria-checked="false"
             on:click={handleShowLatinSample}
@@ -245,13 +265,25 @@
           <input
             type="checkbox"
             id="showMinus1Sample"
-            name="showMinus1Sampleswitch"
+            name="showMinus1SampleSwitch"
             role="switch"
             aria-checked="false"
             on:click={handleShowMinus1Sample}
           />
           指定の90%の例を表示
         </label>
+        <label for="setFeatureSettings">
+          <input
+            type="checkbox"
+            id="setFeatureSettings"
+            name="setFeatureSettingsSwitch"
+            role="switch"
+            aria-checked="false"
+            on:click={handleSetFeatureSettings}
+          />
+          文字詰め
+        </label>
+
       </fieldset>
     </div>
   </form>
@@ -262,6 +294,7 @@
       style:font-size={`${fontSize}px`}
       style:font-weight={fontWeight}
       style:color={textColor}
+      class:feature-settings-palt={fontFeatureSettings}
     >
       {sampleText}
     </p>
@@ -278,6 +311,7 @@
         style:font-size={`${fontSize}px`}
         style:font-weight={fontWeight}
         style:color={textColor}
+        class:feature-settings-palt={fontFeatureSettings}
       >
         <strong>Latin font</strong><br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -297,6 +331,7 @@
         style:font-size={`${fontSize * 0.9}px`}
         style:font-weight={fontWeight}
         style:color={textColor}
+        class:feature-settings-palt={fontFeatureSettings}
       >
         <strong>フォントサイズ 90%</strong><br />
         {sampleText}
@@ -367,6 +402,7 @@
       {backgroundColor}
       {sampleText}
       {fontFaceClassName}
+      {fontFeatureSettings}
     />
     <FontWeightSample
       weight={400}
@@ -375,6 +411,7 @@
       {backgroundColor}
       {sampleText}
       {fontFaceClassName}
+      {fontFeatureSettings}
     />
     <FontWeightSample
       weight={700}
@@ -383,6 +420,7 @@
       {backgroundColor}
       {sampleText}
       {fontFaceClassName}
+      {fontFeatureSettings}
     />
   </div>
 </section>

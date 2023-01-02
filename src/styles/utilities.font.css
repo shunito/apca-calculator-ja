@@ -14,6 +14,16 @@
   .biz-ud-p-mincho {
     font-family: "BIZ UDPMincho";
   }
+  
+  .rounded-mplus-1c {
+    font-family: "M PLUS Rounded 1c";
+  }
+
+  .feature-settings-palt {
+    -webkit-font-feature-settings: 'palt' 1;
+    font-feature-settings: 'palt' 1;
+  }
+  
   .weight100 {
     font-weight: 100;
   }
