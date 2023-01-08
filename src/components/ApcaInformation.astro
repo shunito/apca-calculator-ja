@@ -10,35 +10,20 @@ import { Conformance, Version, Revised } from "../conf/apca-font2Lc-table.json";
       >Accurate ContrastUsing the APCA</a
     >などからリソースを参照してください。
   </p>
-  <p>
-    適応したAPCAコントラスト基準は以下の通りです。公式サイトのフォントサイズとウェイトの適合テーブルからデータを作成していますが最新化されていない場合があります。<br
-    />
-    最新の基準は<a href="https://www.myndex.com/APCA/"
-      >APCA Contrast Calculator</a
-    >を参照してください。
-  </p>
+  <p>適応したAPCAコントラスト基準は以下の通りです。 </p>
   <ul>
     <li>適応基準：{Conformance}</li>
     <li>バージョン：{Version}</li>
     <li>改訂日：{Revised}</li>
   </ul>
-  <h3>フォントサイズ90%調整版について</h3>
   <p>
-    APCAのフォントサイズの基準値は、x-heightが0.5以上の欧文フォントを前提に作成されています。また、ウェイトについてはHelveticaやArialなどの高度に標準化されたリファレンスフォントに基づく、とされています
-  </p>
-  <p>
-    実効的な文字サイズがフォントのx-heightに影響される欧文フォントと違い、日本語のフォントはフォントサイズと実効的な文字のサイズの違いが小さいため、同じフォントサイズを適応すると欧文より日本語の方が文字サイズが大きく見えることになります。<br
+    公式サイトのフォントサイズとウェイトの適合テーブルからデータを作成していますが最新化されていない場合があります。（APCAは開発中であることに注意してください）<br
     />
-    APCAのコンセプトから考えると、基準値をそのまま日本語に適応した場合にサイズが過大である可能性があるため、サイズを90%に調整した例を作成しました。
+    最新の基準は<a href="https://www.myndex.com/APCA/"
+      >APCA Contrast Calculator</a
+    >を参照してください。
   </p>
-  <p>
-    90%という値は作成者が作業しながら欧文と目視で見比べながら決めた値であり、何らの科学的調査・検討をおこなったものではありません。ぜひ、あなたもオリジナルの設定とラテンフォント例、90%の例を見比べてみてください。<br
-    />
-    もう少し詳しい説明はQiitaの記事、<a
-      href="https://qiita.com/shunito/items/4aecd32fcb3f22064e4a"
-      >APCA何もわからない</a
-    >を参照ください。
-  </p>
+
 
   <h2>ライセンス</h2>
   <p>
@@ -74,8 +59,7 @@ import { Conformance, Version, Revised } from "../conf/apca-font2Lc-table.json";
   .aboutAPCA {
     margin: 0;
   }
-  .aboutAPCA h2,
-  .aboutAPCA h3 {
+  .aboutAPCA h2 {
     margin-bottom: 1rem;
   }
 </style>
