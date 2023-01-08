@@ -5,7 +5,7 @@
   import { table as lcTable } from "../conf/apca-font2Lc-table.json";
   import FontWeightSample from "./FontWeightSample.svelte";
 
-  export const fontWeightList = [
+  const fontWeightList = [
     "100",
     "200",
     "300",
@@ -17,40 +17,25 @@
     "900",
   ];
 
-  export let textColor = "#333333";
-  export let backgroundColor = "#eeeeee";
-  export let sampleText =
+  let fontSize = 18;
+  let fontWeight = "400";
+  let textColor = "#333333";
+  let backgroundColor = "#eeeeee";
+  let fontFaceClassName = fontList[0].className;
+
+  let sampleText =
     "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。 またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。";
 
-  export let contrastLc = calcAPCA(textColor, backgroundColor);
-  export let fcArray = fontLookupAPCA(contrastLc);
-
-  export const fontFace = fontList[0].name.replaceAll("+", " ");
-  export let fontFaceClassName = fontList[0].className;
-
-  export let fontSize = 18;
-  export let fontWeight = "400";
-
-  export let APCAresult = {};
-
-  let selectedFontTypes = {
-    textColor: textColor,
-    backgroundColor: backgroundColor,
-    sampleText: sampleText,
-    fontSize: fontSize,
-    fontWeight: fontWeight,
-    fontFace: fontFaceClassName,
-  };
-
-  let resultBlock = null;
-  $: APCAresult;
-  $: resultBlock;
-  $: selectedFontTypes;
+  let contrastLc = calcAPCA(textColor, backgroundColor);
+  let fcArray = fontLookupAPCA(contrastLc);
 
   let showLatinFontSample = false;
   let showFontMinus1Sample = false;
   let fontFeatureSettings = false;
   let hasFeatureSettings = true;
+
+  let APCAresult = {};
+  $: APCAresult;
 
   // TODO: この辺り初期設計がいけてないのでリファクタ必要
   // JSONの構造と合わせて変えたい
@@ -67,7 +52,6 @@
       APCAresult = getAPCAresult(result[0].weight);
       contrastLc = calcAPCA(textColor, backgroundColor);
       fcArray = fontLookupAPCA(contrastLc);
-      selectedFontTypes = selectedFontTypes;
     }
   };
 
@@ -349,15 +333,15 @@
         APCAコントラスト <strong>{contrastLc.toFixed(1)}</strong>
         <small>Lc</small>
       </li>
-      {#if APCAresult.Lc == "none"}<li>推奨されないフォント設定です。</li>
+      {#if APCAresult.Lc === "none"}<li>推奨されないフォント設定です。</li>
       {:else}
         <li>
           推奨コントラスト <strong>{APCAresult.Lc}</strong> <small>Lc</small>
-          {#if Math.abs(contrastLc) > APCAresult.Lc}（基準値クリア：Rating {APCAresult.Rating}
+          {#if Math.abs(contrastLc) >= APCAresult.Lc}（基準値クリア：Rating {APCAresult.Rating}
             ）{:else}（コントラスト不足）{/if}
         </li>
       {/if}
-      {#if fontWeight == "100"}<li>
+      {#if fontWeight === "100"}<li>
           フォントウェイト100は推奨されません。
         </li>{/if}
       {#if Math.abs(contrastLc) > APCAresult.Lc}
@@ -369,7 +353,7 @@
           </li>{/if}
         {#if APCAresult.Add15BlocksText}<li>
             本文で利用する場合には推奨コントラストに15追加した値を設定してください。
-            （本文での推奨値：{Number(APCAresult.Lc) + 15} Lc）
+            （本文での推奨値：{Number(APCAresult.Lc) + 15} <small>Lc</small>）
           </li>
         {/if}
       {/if}
@@ -385,6 +369,7 @@
         </li>
       {/if}
     </ul>
+    <p>評価についての詳しい説明は <a href="https://git.apcacontrast.com/documentation/APCA_in_a_Nutshell">APCA in a Nutshell</a> を参照してください。</p>
   </div>
 
   <div class="result">
