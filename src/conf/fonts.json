@@ -2,33 +2,59 @@
   "fontList": [
     {
       "name": "Noto+Sans+JP",
+      "webFont": true,
       "wght": "100;300;400;500;700;900",
       "className": "noto-sans-jp",
       "hasFeatureSettings": true
     },
     {
       "name": "Noto+Serif+JP",
+      "webFont": true,
       "wght": "200;300;400;500;600;700;900",
       "className": "noto-serif-jp",
       "hasFeatureSettings": false
     },
     {
       "name": "BIZ+UDPGothic",
+      "webFont": true,
       "wght": "400;700",
       "className": "biz-ud-p-gothic",
       "hasFeatureSettings": false
     },
     {
       "name": "BIZ+UDPMincho",
+      "webFont": true,
       "wght": "400",
       "className": "biz-ud-p-mincho",
       "hasFeatureSettings": false
     },
     {
       "name": "M+PLUS+Rounded+1c",
+      "webFont": true,
       "wght":"100;300;400;500;700;800;900",
       "className":"rounded-mplus-1c",
       "hasFeatureSettings": false
-    }
+    },
+    {
+      "name": "游ゴシック",
+      "webFont": false,
+      "wght":"100;300;400;500;700;800;900",
+      "className":"yu-gothic",
+      "hasFeatureSettings": true
+    },
+    {
+      "name": "游明朝",
+      "webFont": false,
+      "wght":"100;300;400;500;700;800;900",
+      "className":"yu-mincho",
+      "hasFeatureSettings": true
+    },
+    {
+      "name": "システムUI",
+      "webFont": false,
+      "wght":"100;300;400;500;700;800;900",
+      "className":"system-ui",
+      "hasFeatureSettings": true
+    }    
   ]
 }

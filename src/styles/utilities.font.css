@@ -19,6 +19,18 @@
     font-family: "M PLUS Rounded 1c";
   }
 
+  .yu-gothic{
+    font-family: YuGothic, "游ゴシック", "Yu Gothic";
+  }
+
+  .yu-mincho{
+    font-family: YuMincho, "游明朝", "Yu Mincho";
+  }
+
+  .system-ui{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  }
+
   .feature-settings-palt {
     -webkit-font-feature-settings: 'palt' 1;
     font-feature-settings: 'palt' 1;

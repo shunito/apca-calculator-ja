@@ -2,8 +2,9 @@
 import { fontList } from "../conf/fonts.json";
 
 const googlefontUrl = "https://fonts.googleapis.com/css2";
+const list = fontList.filter( font => font.webFont === true );
 
-const fontHrefList = fontList.map(
+const fontHrefList = list.map(
   (font: { name: string; wght: string }) =>
     `${googlefontUrl}?family=${font.name}:wght@${font.wght}&display=swap`
 );
