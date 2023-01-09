@@ -14,28 +14,28 @@
   .biz-ud-p-mincho {
     font-family: "BIZ UDPMincho";
   }
-  
+
   .rounded-mplus-1c {
     font-family: "M PLUS Rounded 1c";
   }
 
-  .yu-gothic{
+  .yu-gothic {
     font-family: YuGothic, "游ゴシック", "Yu Gothic";
   }
 
-  .yu-mincho{
+  .yu-mincho {
     font-family: YuMincho, "游明朝", "Yu Mincho";
   }
 
-  .system-ui{
+  .system-ui {
     font-family: system-ui, -apple-system, BlinkMacSystemFont;
   }
 
   .feature-settings-palt {
-    -webkit-font-feature-settings: 'palt' 1;
-    font-feature-settings: 'palt' 1;
+    -webkit-font-feature-settings: "palt" 1;
+    font-feature-settings: "palt" 1;
   }
-  
+
   .weight100 {
     font-weight: 100;
   }
