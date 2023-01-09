@@ -76,6 +76,24 @@ const { title } = Astro.props;
           --muted-color: hsl(205deg 17% 44%);
         }
 
+        .sample-box:focus,
+        select:focus,
+        textarea:focus,
+        input:focus,
+        textarea:focus,
+        button:focus {
+          outline: rgb(54, 163, 199, 0.5) solid 3px;
+        }
+
+        :root:not([data-theme="light"]) .sample-box:focus,
+        :root:not([data-theme="light"]) select:focus,
+        :root:not([data-theme="light"]) textarea:focus,
+        :root:not([data-theme="light"]) input:focus,
+        :root:not([data-theme="light"]) textarea:focus,
+        :root:not([data-theme="light"]) button:focus {
+          outline: rgba(168, 184, 190, 0.8) solid 3px;
+        }
+
         .visually-hidden {
           clip: rect(0 0 0 0);
           clip-path: inset(50%);
