@@ -42,7 +42,7 @@ const { title } = Astro.props;
     let scheme = "";
     if (messanger) {
       _scheme === "light" ? (scheme = "ライト") : (scheme = "ダーク");
-      messanger.setAttribute("text", `テーマを${scheme}モードに変更しました`);
+      messanger.textContent = `テーマを${scheme}モードに変更しました`;
     }
   };
 
@@ -50,7 +50,6 @@ const { title } = Astro.props;
     if (button) {
       button.addEventListener("click", () => {
         _scheme === "light" ? (_scheme = "dark") : (_scheme = "light");
-        console.log(_scheme);
         applyScheme();
         messageSchemeChange();
       });
