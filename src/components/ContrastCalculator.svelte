@@ -75,10 +75,9 @@
     checkbox.checked = false;
     fontFeatureSettings = false;
 
-    if(hasFeatureSettings) {
+    if (hasFeatureSettings) {
       checkbox.disabled = false;
-    }
-    else{
+    } else {
       checkbox.disabled = true;
     }
   };
@@ -119,7 +118,7 @@
     const checkbox = event.target;
     fontFeatureSettings = checkbox.checked;
     checkbox.setAttribute("aria-checked", checkbox.checked);
-  }
+  };
 
   onMount(() => {
     calculator();
@@ -267,7 +266,6 @@
           />
           文字詰め
         </label>
-
       </fieldset>
     </div>
   </form>
@@ -369,7 +367,12 @@
         </li>
       {/if}
     </ul>
-    <p>評価についての詳しい説明は <a href="https://git.apcacontrast.com/documentation/APCA_in_a_Nutshell">APCA in a Nutshell</a> を参照してください。</p>
+    <p>
+      評価についての詳しい説明は <a
+        href="https://git.apcacontrast.com/documentation/APCA_in_a_Nutshell"
+        >APCA in a Nutshell</a
+      > を参照してください。
+    </p>
   </div>
 
   <div class="result">

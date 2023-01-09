@@ -31,30 +31,30 @@
     {
       "name": "M+PLUS+Rounded+1c",
       "webFont": true,
-      "wght":"100;300;400;500;700;800;900",
-      "className":"rounded-mplus-1c",
+      "wght": "100;300;400;500;700;800;900",
+      "className": "rounded-mplus-1c",
       "hasFeatureSettings": false
     },
     {
       "name": "游ゴシック",
       "webFont": false,
-      "wght":"100;300;400;500;700;800;900",
-      "className":"yu-gothic",
+      "wght": "100;300;400;500;700;800;900",
+      "className": "yu-gothic",
       "hasFeatureSettings": true
     },
     {
       "name": "游明朝",
       "webFont": false,
-      "wght":"100;300;400;500;700;800;900",
-      "className":"yu-mincho",
+      "wght": "100;300;400;500;700;800;900",
+      "className": "yu-mincho",
       "hasFeatureSettings": true
     },
     {
       "name": "システムUI",
       "webFont": false,
-      "wght":"100;300;400;500;700;800;900",
-      "className":"system-ui",
+      "wght": "100;300;400;500;700;800;900",
+      "className": "system-ui",
       "hasFeatureSettings": true
-    }    
+    }
   ]
 }
