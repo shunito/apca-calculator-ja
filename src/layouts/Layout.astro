@@ -18,6 +18,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content="WCAG 3.0においてコントラスト比に関する新しい基準として提唱されているAPCAについて、日本語フォントでの表示を検証。">
     <link rel="stylesheet" href="/styles/global.css" />
     <!-- Google Tag Manager -->
     <script is:inline>
@@ -92,6 +93,10 @@ const { title } = Astro.props;
         :root:not([data-theme="light"]) textarea:focus,
         :root:not([data-theme="light"]) button:focus {
           outline: rgba(168, 184, 190, 0.8) solid 3px;
+        }
+
+        a {
+          text-decoration: underline;
         }
 
         .visually-hidden {
