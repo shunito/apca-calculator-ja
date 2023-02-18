@@ -414,43 +414,45 @@
 </section>
 
 <style>
-  .color-selector {
-    grid-template-columns: auto 5rem auto;
-    align-items: end;
-  }
-  .color-set {
-    grid-template-columns: 3fr 1fr;
-  }
-  .font-selector {
-    grid-template-columns: 2fr 1fr 1fr;
-  }
-  .btn-swap {
-    white-space: nowrap;
-    max-height: 3rem;
-  }
-  .sampleTextArea {
-    height: 6rem;
-    font-size: 0.8rem;
-  }
-  .result {
-    margin: 2rem 0;
-  }
-  .result h3 {
-    margin-bottom: 0rem;
-  }
-  .resultTextArea {
-    padding: 1rem;
-    line-height: 1.8;
-    margin: 2px 0;
-  }
-  .resultTextArea p {
-    margin: 0;
-  }
-  .inline {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .inline label {
-    margin-right: 2rem;
+  @layer component {
+    .color-selector {
+      grid-template-columns: auto 5rem auto;
+      align-items: end;
+    }
+    .color-set {
+      grid-template-columns: 3fr 1fr;
+    }
+    .font-selector {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    .btn-swap {
+      white-space: nowrap;
+      max-height: 3rem;
+    }
+    .sampleTextArea {
+      height: 6rem;
+      font-size: 0.8rem;
+    }
+    .result {
+      margin: 2rem 0;
+    }
+    .result h3 {
+      margin-bottom: 0rem;
+    }
+    .resultTextArea {
+      padding: 1rem;
+      line-height: 1.8;
+      margin: 2px 0;
+    }
+    .resultTextArea p {
+      margin: 0;
+    }
+    .inline {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .inline label {
+      margin-right: 2rem;
+    }
   }
 </style>

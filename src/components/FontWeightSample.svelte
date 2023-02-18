@@ -25,17 +25,21 @@
 </section>
 
 <style>
-  .sample-setting {
-    grid-template-columns: 1fr 5fr;
-  }
-  .sample-setting p {
-    margin: 0;
-  }
+  @layer component {
+    @layer sampleSetting {
+      .sample-setting {
+        grid-template-columns: 1fr 5fr;
+      }
+      .sample-setting p {
+        margin: 0;
+      }
 
-  .sample-box {
-    padding: 1rem;
-    line-height: 1.8;
-    max-height: 10rem;
-    overflow: scroll;
+      .sample-box {
+        padding: 1rem;
+        line-height: 1.8;
+        max-height: 10rem;
+        overflow: scroll;
+      }
+    }
   }
 </style>
