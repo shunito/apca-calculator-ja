@@ -1,2 +1,2 @@
-@layer base, i18n, component, utilities;
+@layer base, a11y, i18n, component, utilities;
 @import url(pico.min.css) layer(base);

@@ -29,6 +29,7 @@
     @layer sampleSetting {
       .sample-setting {
         grid-template-columns: 1fr 5fr;
+        margin-bottom: 1rem;
       }
       .sample-setting p {
         margin: 0;
@@ -39,6 +40,11 @@
         line-height: 1.8;
         max-height: 10rem;
         overflow: scroll;
+      }
+      @media (max-width: 576px) {
+        .sample-setting {
+          grid-template-columns: 1fr;
+        }
       }
     }
   }

@@ -18,7 +18,10 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <meta name="description" content="WCAG 3.0においてコントラスト比に関する新しい基準として提唱されているAPCAについて、日本語フォントでの表示を検証。">
+    <meta
+      name="description"
+      content="WCAG 3.0においてコントラスト比に関する新しい基準として提唱されているAPCAについて、日本語フォントでの表示を検証。"
+    />
     <link rel="stylesheet" href="/styles/global.css" />
     <!-- Google Tag Manager -->
     <script is:inline>
@@ -43,7 +46,7 @@ const { title } = Astro.props;
     <Footer />
     <style is:global>
       @layer i18n {
-        html[lang="ja"] {
+        [lang="ja"] {
           --font-family: system-ui, -apple-system, "Segoe UI", "Roboto",
             "Ubuntu", "Cantarell", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
             Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -59,7 +62,7 @@ const { title } = Astro.props;
         }
       }
 
-      @layer utilities.a11y {
+      @layer a11y {
         :root:not([data-theme="light"]) {
           --primary: rgb(54, 163, 199);
           --primary-hover: rgb(117, 173, 192);
@@ -77,21 +80,11 @@ const { title } = Astro.props;
           --muted-color: hsl(205deg 17% 44%);
         }
 
-        .sample-box:focus,
-        select:focus,
-        textarea:focus,
-        input:focus,
-        textarea:focus,
-        button:focus {
+        :focus {
           outline: rgb(54, 163, 199, 0.5) solid 3px;
         }
 
-        :root:not([data-theme="light"]) .sample-box:focus,
-        :root:not([data-theme="light"]) select:focus,
-        :root:not([data-theme="light"]) textarea:focus,
-        :root:not([data-theme="light"]) input:focus,
-        :root:not([data-theme="light"]) textarea:focus,
-        :root:not([data-theme="light"]) button:focus {
+        :root:not([data-theme="light"]) :focus {
           outline: rgba(168, 184, 190, 0.8) solid 3px;
         }
 
