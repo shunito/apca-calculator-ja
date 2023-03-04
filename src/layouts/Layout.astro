@@ -103,8 +103,10 @@ const { title } = Astro.props;
         }
       }
 
-      .page-title {
-        margin: 0;
+      @layer base {
+        .page-title {
+          margin: 0;
+        }
       }
     </style>
   </body>
