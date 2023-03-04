@@ -454,5 +454,14 @@
     .inline label {
       margin-right: 2rem;
     }
+
+    @media (max-width: 576px) {
+      .color-selector {
+        grid-template-columns: 1fr;
+      }
+      .font-selector {
+        grid-template-columns: 3fr 2fr;
+      }
+    }
   }
 </style>
