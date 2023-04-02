@@ -238,8 +238,6 @@
             type="checkbox"
             id="showLatinSample"
             name="showLatinSampleSwitch"
-            role="switch"
-            aria-checked="false"
             on:click={handleShowLatinSample}
           />
           ラテンフォント例を表示
@@ -249,8 +247,6 @@
             type="checkbox"
             id="showMinus1Sample"
             name="showMinus1SampleSwitch"
-            role="switch"
-            aria-checked="false"
             on:click={handleShowMinus1Sample}
           />
           指定の90%の例を表示
@@ -260,8 +256,6 @@
             type="checkbox"
             id="setFeatureSettings"
             name="setFeatureSettingsSwitch"
-            role="switch"
-            aria-checked="false"
             on:click={handleSetFeatureSettings}
           />
           文字詰め
