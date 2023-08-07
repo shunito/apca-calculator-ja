@@ -162,7 +162,7 @@
       </div>
       <button
         type="button"
-        class="btn-swap secondary"
+        class="btn-swap primary"
         on:click={handleSwapColor}>入替</button
       >
       <div>
@@ -218,7 +218,7 @@
       </div>
       <div>
         <label for="fontWeight">ウェイト</label>
-        <div class="grid">
+        <div>
           <select id="fontWeight" on:change={handleFontWeightChange}>
             {#each fontWeightList as weight, index}
               {#if weight === fontWeight}
