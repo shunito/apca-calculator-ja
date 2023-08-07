@@ -41,74 +41,10 @@ const { title } = Astro.props;
     <GoogleFont />
   </head>
   <body>
-    <Header title={title} />
-    <slot />
-    <Footer />
-    <style is:global>
-      @layer i18n {
-        [lang="ja"] {
-          --font-family: system-ui, -apple-system, "Segoe UI", "Roboto",
-            "Ubuntu", "Cantarell", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
-            Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", "Noto Color Emoji";
-          line-height: 1.8;
-        }
-
-        [lang="en"] {
-          --font-family: "Arial", "Helvetica Neue", "Helvetica" system-ui,
-            -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell",
-            sans-serif;
-          line-height: 1.6;
-        }
-      }
-
-      @layer a11y {
-        :root:not([data-theme="light"]) {
-          --primary: rgb(54, 163, 199);
-          --primary-hover: rgb(117, 173, 192);
-          --primary-focus: rgba(92, 92, 92, 0.25);
-          --muted-color: rgb(140, 155, 165);
-          --secondary-hover: hsl(195deg 94% 22%);
-        }
-
-        :root:not([data-theme="light"]) a.secondary {
-          color: rgb(129, 171, 198);
-        }
-
-        :root:not([data-theme="dark"]) {
-          --primary: hsl(195deg, 90%, 32%);
-          --primary-hover: hsl(195deg 94% 22%);
-          --muted-color: hsl(205deg 17% 44%);
-        }
-
-        :focus {
-          outline: rgb(54, 163, 199, 0.5) solid 3px;
-        }
-
-        :root:not([data-theme="light"]) :focus {
-          outline: rgba(168, 184, 190, 0.8) solid 3px;
-        }
-
-        a {
-          text-decoration: underline;
-        }
-
-        .visually-hidden {
-          clip: rect(0 0 0 0);
-          clip-path: inset(50%);
-          height: 1px;
-          overflow: hidden;
-          position: absolute;
-          white-space: nowrap;
-          width: 1px;
-        }
-      }
-
-      @layer base {
-        .page-title {
-          margin: 0;
-        }
-      }
-    </style>
+    <div class="page">
+      <Header title={title} />
+      <slot />
+      <Footer />  
+    </div>
   </body>
 </html>
