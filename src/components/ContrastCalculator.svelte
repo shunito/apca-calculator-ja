@@ -160,10 +160,8 @@
           />
         </div>
       </div>
-      <button
-        type="button"
-        class="btn-swap primary"
-        on:click={handleSwapColor}>入替</button
+      <button type="button" class="btn-swap primary" on:click={handleSwapColor}
+        >入替</button
       >
       <div>
         <label for="backgroundColor">バックグラウンドカラー</label>

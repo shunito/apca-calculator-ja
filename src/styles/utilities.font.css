@@ -28,7 +28,10 @@
   }
 
   .system-ui {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont;
   }
 
   .feature-settings-palt {

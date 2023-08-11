@@ -111,7 +111,9 @@
 <section>
   <div class="headings">
     <h2>色覚特性ごとのコントラスト比較</h2>
-    <p>二つの色を選択すると、色覚特性ごとのシミュレーション結果とコントラスト（Lc）が表示されます。</p>
+    <p>
+      二つの色を選択すると、色覚特性ごとのシミュレーション結果とコントラスト（Lc）が表示されます。
+    </p>
   </div>
 
   <form on:submit|preventDefault={handleSubmit}>
@@ -164,191 +166,236 @@
   <div class="result">
     <h3>C型色覚</h3>
     <div class="resultTextArea">
-        <div class="resultOneBox">
-            <p class="resultLc">Lc :  {calcAPCA(textColor,backgroundColor).toFixed(1)} </p>
-            <p
-              class={fontFaceClassName}
-              style:font-size={`${fontSize}px`}
-              style:font-weight={fontWeight}
-              style:color={textColor}
-              style:background-color={backgroundColor}
-              class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>  
-        </div>
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : {calcAPCA(backgroundColor, textColor).toFixed(1)}</p>
-            <p
-              class={fontFaceClassName}
-              style:font-size={`${fontSize}px`}
-              style:font-weight={fontWeight}
-              style:color={backgroundColor}
-              style:background-color={textColor}
-              class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>    
-        </div>
-        <div class="blinderColor">
-            <p>
-                カラー（１）：{textColor} <br>
-                カラー（２）：{backgroundColor} <br>    
-            </p>
-        </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(textColor, backgroundColor).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={textColor}
+          style:background-color={backgroundColor}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(backgroundColor, textColor).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={backgroundColor}
+          style:background-color={textColor}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="blinderColor">
+        <p>
+          カラー（１）：{textColor} <br />
+          カラー（２）：{backgroundColor} <br />
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="result">
     <h3>P型色覚（Protanopia）</h3>
     <div class="resultTextArea">
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : { calcAPCA(blinder.protanopia(textColor), blinder.protanopia(backgroundColor)).toFixed(1)}</p>
-            <p
-            class={fontFaceClassName}
-            style:font-size={`${fontSize}px`}
-            style:font-weight={fontWeight}
-            style:color={ blinder.protanopia(textColor)}
-            style:background-color={ blinder.protanopia(backgroundColor)}
-            class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>  
-        </div>
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : {
-                calcAPCA( blinder.protanopia(backgroundColor), blinder.protanopia(textColor)).toFixed(1)
-                } </p>
-            <p
-              class={fontFaceClassName}
-              style:font-size={`${fontSize}px`}
-              style:font-weight={fontWeight}
-              style:color={ blinder.protanopia(backgroundColor) }
-              style:background-color={ blinder.protanopia(textColor) }
-              class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>    
-        </div>
-        <div class="blinderColor">
-            <p>
-                カラー（１）：{blinder.protanopia(textColor)} <br>
-                カラー（２）：{blinder.protanopia(backgroundColor)} <br>    
-            </p>
-        </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.protanopia(textColor),
+            blinder.protanopia(backgroundColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.protanopia(textColor)}
+          style:background-color={blinder.protanopia(backgroundColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.protanopia(backgroundColor),
+            blinder.protanopia(textColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.protanopia(backgroundColor)}
+          style:background-color={blinder.protanopia(textColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="blinderColor">
+        <p>
+          カラー（１）：{blinder.protanopia(textColor)} <br />
+          カラー（２）：{blinder.protanopia(backgroundColor)} <br />
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="result">
     <h3>D型色覚（Deuteranopia）</h3>
     <div class="resultTextArea">
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : { calcAPCA(blinder.deuteranopia(textColor), blinder.deuteranopia(backgroundColor)).toFixed(1)}</p>
-            <p
-            class={fontFaceClassName}
-            style:font-size={`${fontSize}px`}
-            style:font-weight={fontWeight}
-            style:color={ blinder.deuteranopia(textColor)}
-            style:background-color={ blinder.deuteranopia(backgroundColor)}
-            class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>  
-        </div>
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : {
-                calcAPCA( blinder.deuteranopia(backgroundColor), blinder.deuteranopia(textColor)).toFixed(1)
-                } </p>
-            <p
-              class={fontFaceClassName}
-              style:font-size={`${fontSize}px`}
-              style:font-weight={fontWeight}
-              style:color={ blinder.deuteranopia(backgroundColor) }
-              style:background-color={ blinder.deuteranopia(textColor) }
-              class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>    
-        </div>
-        <div class="blinderColor">
-            <p>
-                カラー（１）：{blinder.deuteranopia(textColor)} <br>
-                カラー（２）：{blinder.deuteranopia(backgroundColor)} <br>    
-            </p>
-        </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.deuteranopia(textColor),
+            blinder.deuteranopia(backgroundColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.deuteranopia(textColor)}
+          style:background-color={blinder.deuteranopia(backgroundColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.deuteranopia(backgroundColor),
+            blinder.deuteranopia(textColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.deuteranopia(backgroundColor)}
+          style:background-color={blinder.deuteranopia(textColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="blinderColor">
+        <p>
+          カラー（１）：{blinder.deuteranopia(textColor)} <br />
+          カラー（２）：{blinder.deuteranopia(backgroundColor)} <br />
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="result">
     <h3>T型色覚（Tritanopia）</h3>
     <div class="resultTextArea">
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : { calcAPCA(blinder.tritanopia(textColor), blinder.tritanopia(backgroundColor)).toFixed(1)}</p>
-            <p
-            class={fontFaceClassName}
-            style:font-size={`${fontSize}px`}
-            style:font-weight={fontWeight}
-            style:color={ blinder.tritanopia(textColor)}
-            style:background-color={ blinder.tritanopia(backgroundColor)}
-            class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>  
-        </div>
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : {
-                calcAPCA( blinder.tritanopia(backgroundColor), blinder.tritanopia(textColor)).toFixed(1)
-                } </p>
-            <p
-              class={fontFaceClassName}
-              style:font-size={`${fontSize}px`}
-              style:font-weight={fontWeight}
-              style:color={ blinder.tritanopia(backgroundColor) }
-              style:background-color={ blinder.tritanopia(textColor) }
-              class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>    
-        </div>
-        <div class="blinderColor">
-            <p>
-                カラー（１）：{blinder.tritanopia(textColor)} <br>
-                カラー（２）：{blinder.tritanopia(backgroundColor)} <br>    
-            </p>
-        </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.tritanopia(textColor),
+            blinder.tritanopia(backgroundColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.tritanopia(textColor)}
+          style:background-color={blinder.tritanopia(backgroundColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.tritanopia(backgroundColor),
+            blinder.tritanopia(textColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.tritanopia(backgroundColor)}
+          style:background-color={blinder.tritanopia(textColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="blinderColor">
+        <p>
+          カラー（１）：{blinder.tritanopia(textColor)} <br />
+          カラー（２）：{blinder.tritanopia(backgroundColor)} <br />
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="result">
     <h3>A型色覚（Achromatopsia）</h3>
     <div class="resultTextArea">
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : { calcAPCA(blinder.achromatopsia(textColor), blinder.achromatopsia(backgroundColor)).toFixed(1)}</p>
-            <p
-            class={fontFaceClassName}
-            style:font-size={`${fontSize}px`}
-            style:font-weight={fontWeight}
-            style:color={ blinder.achromatopsia(textColor)}
-            style:background-color={ blinder.achromatopsia(backgroundColor)}
-            class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>  
-        </div>
-        <div class="resultOneBox">
-            <p class="resultLc">Lc : {
-                calcAPCA( blinder.achromatopsia(backgroundColor), blinder.achromatopsia(textColor)).toFixed(1)
-                } </p>
-            <p
-              class={fontFaceClassName}
-              style:font-size={`${fontSize}px`}
-              style:font-weight={fontWeight}
-              style:color={ blinder.achromatopsia(backgroundColor) }
-              style:background-color={ blinder.achromatopsia(textColor) }
-              class:feature-settings-palt={fontFeatureSettings}
-            >あいうえおabc
-            </p>    
-        </div>
-        <div class="blinderColor">
-            <p>
-                カラー（１）：{blinder.achromatopsia(textColor)} <br>
-                カラー（２）：{blinder.achromatopsia(backgroundColor)} <br>    
-            </p>
-        </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.achromatopsia(textColor),
+            blinder.achromatopsia(backgroundColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.achromatopsia(textColor)}
+          style:background-color={blinder.achromatopsia(backgroundColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="resultOneBox">
+        <p class="resultLc">
+          Lc : {calcAPCA(
+            blinder.achromatopsia(backgroundColor),
+            blinder.achromatopsia(textColor)
+          ).toFixed(1)}
+        </p>
+        <p
+          class={fontFaceClassName}
+          style:font-size={`${fontSize}px`}
+          style:font-weight={fontWeight}
+          style:color={blinder.achromatopsia(backgroundColor)}
+          style:background-color={blinder.achromatopsia(textColor)}
+          class:feature-settings-palt={fontFeatureSettings}
+        >
+          あいうえおabc
+        </p>
+      </div>
+      <div class="blinderColor">
+        <p>
+          カラー（１）：{blinder.achromatopsia(textColor)} <br />
+          カラー（２）：{blinder.achromatopsia(backgroundColor)} <br />
+        </p>
+      </div>
     </div>
   </div>
-
 </section>
 
 <style>
@@ -381,7 +428,7 @@
       padding: 1rem;
     }
     .resultOneBox {
-        display: flex;
+      display: flex;
       border: 1px solid #ccc;
       margin: 2px;
     }
@@ -391,8 +438,8 @@
       white-space: nowrap;
     }
     .blinderColor p {
-        font-size: 0.8rem;
-        padding: 0.5rem;
+      font-size: 0.8rem;
+      padding: 0.5rem;
     }
 
     @media (max-width: 576px) {
